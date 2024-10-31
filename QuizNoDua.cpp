@@ -10,7 +10,7 @@ int main(){
     cout << "Masukkan berat semangka dalam kg: ";
     cin >> semangka;
 
-    totalApel = apel * 12000;
+    totalApel = apel * 24000;
     totalJeruk = jeruk * 32500;
     totalSemangka = semangka * 8000;
     double totalSemua = totalApel + totalJeruk + totalSemangka;
