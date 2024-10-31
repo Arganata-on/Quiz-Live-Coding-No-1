@@ -1,31 +1,27 @@
 #include <iostream>
-
 using namespace std;
 int main(){
-    double apel, totalApel, jeruk, totalJeruk, semangka, totalSemangka;
-
-    cout << "Masukkan berat buah apel dalam (kg): ";
+    double apel, jeruk, semangka, totalApel, totalJeruk, totalSemangka, diskon, hargaFinal;
+    
+    cout << "Masukkan berat apel dalam kg: ";
     cin >> apel;
-    cout << "Masukan berat buah jeruk dalam (kg): ";
+    cout << "Masukkan berat jeruk dalam kg: ";
     cin >> jeruk;
-    cout << "Masukkan berat buah semangka dalam (kg): ";
+    cout << "Masukkan berat semangka dalam kg: ";
     cin >> semangka;
 
-    totalApel = apel * 24000;
+    totalApel = apel * 12000;
     totalJeruk = jeruk * 32500;
     totalSemangka = semangka * 8000;
-
-    double totalkg = apel + jeruk + semangka;
     double totalSemua = totalApel + totalJeruk + totalSemangka;
-    double diskon;
-
-    if(totalkg > 10){
-       diskon = totalSemua * (5.0/100);
+    double totalKg = apel + jeruk + semangka;
+    if(totalKg > 10){
+        diskon = totalSemua * 0.05;
     }
-    else if(totalkg > 8){
-       diskon = totalSemua * (2.0/100);
+    else if(totalKg > 8){
+        diskon = totalSemua * 0.02;
     }
-    cout << "\nHarga yang harus dibayar: "<< totalSemua - diskon;
-
+    hargaFinal = totalSemua - diskon;
+    cout << hargaFinal;
     return 0;
 }
