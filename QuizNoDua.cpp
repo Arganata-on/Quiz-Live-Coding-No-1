@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 int main(){
     double apel, jeruk, semangka, totalApel, totalJeruk, totalSemangka, diskon, hargaFinal;
@@ -15,6 +16,7 @@ int main(){
     totalSemangka = semangka * 8000;
     double totalSemua = totalApel + totalJeruk + totalSemangka;
     double totalKg = apel + jeruk + semangka;
+
     if(totalKg > 10){
         diskon = totalSemua * 0.05;
     }
