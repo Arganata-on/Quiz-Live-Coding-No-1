@@ -14,10 +14,10 @@ int main(){
     totalSemangka = semangka * 8000;
     double totalkg = apel + jeruk + semangka;
     if(totalkg > 10){
-        totalSemua/0.05;
+        totalSemua-=/0.05;
     }
     else if(totalkg> 8){
-        totalSemua/0.02;
+        totalSemua-=/0.02;
     }
     totalSemua = totalApel + totalJeruk + totalSemangka;
     cout << "\nHarga yang harus dibayar: "<< totalSemua;
