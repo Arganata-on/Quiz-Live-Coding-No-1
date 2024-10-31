@@ -22,6 +22,6 @@ int main(){
         diskon = totalSemua * 0.02;
     }
     hargaFinal = totalSemua - diskon;
-    cout << hargaFinal;
+    cout << "Jumlah uang yang harus dibayar: " << hargaFinal << " rupiah";
     return 0;
 }
